@@ -1,0 +1,37 @@
+package tests;
+
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import pages.HomeRegisteredPage;
+import testdata.TestData;
+
+public class HomeRegisteredTests extends RegisterationTests {
+	
+	HomeRegisteredPage homreg;
+	
+	TestData tstdata  = new TestData("C:\\Users\\Candle_Store\\Desktop\\VOIS_Testng\\VoisTest\\TestData\\nopCommerce.xlsx","Search");
+
+	@BeforeMethod
+	public void prerequesit() {
+		//HomeTests homtest = new HomeTests();
+		//homtest.Registeration();
+		//homtest.clickregister();
+		RegisterationTests regtest = new RegisterationTests();
+		regtest.UserChooseGender();
+		regtest.fillFirstnam_lastName();
+		regtest.selectBirthdaysBirthmonthBirthyear();
+		regtest.fillemailaddress();
+		regtest.fillthecompanyname();
+		regtest.fillPasswordandConfirm_password();
+	}
+	
+	
+	//@Test (dependsOnMethods = {"UserChooseGender"})
+	@Test
+	public void searchingforproduct() {
+		homreg.SearchingForProduct(tstdata.getproductname());
+	}
+	
+
+}

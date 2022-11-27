@@ -1,0 +1,17 @@
+package pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+import Bases.Base;
+
+public class HomePage extends Base {
+	
+	
+	 WebElement RegisterBtn = driver.findElement(By.xpath("//a[@class='ico-register']")) ;
+	    public void ClickondRegister(){
+	        RegisterBtn.click();
+	    }
+
+}

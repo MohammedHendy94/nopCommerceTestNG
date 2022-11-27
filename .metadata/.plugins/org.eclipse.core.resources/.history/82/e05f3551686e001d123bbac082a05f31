@@ -1,0 +1,30 @@
+package tests;
+
+import pages.CheckOutPage;
+
+public class CheckOutTests {
+	
+	
+	
+	 CheckOutPage chekout;
+	 
+	 
+	    public void fill_the_billingAddress(String country, String city, String address1, String zipcod, String phone) {
+	        chekout = new CheckOutPage();
+	        chekout.FillingBillingAddress(country, city, address1, zipcod, phone);
+	    }
+
+	    public void selectTheShippingMethod(String shipmethod) {
+	        CheckOutPage.SelectingShippingMethod(shipmethod);
+	    }
+
+	    public void selectThePaymentMethodAndContinue() {
+	        CheckOutPage.SelectingpaymentMethod();
+	    }
+
+	    public void clickConfirmToOnTheOrderDetails() {
+	        CheckOutPage.ConfirmingOrder();
+	    }
+
+	 
+}

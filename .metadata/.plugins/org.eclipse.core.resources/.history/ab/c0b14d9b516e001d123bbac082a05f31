@@ -1,0 +1,59 @@
+package tests;
+
+import java.io.IOException;
+
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+import pages.RegisterationPage;
+import testdata.TestData;
+
+public class RegisterationTests extends HomeTests {
+	
+	RegisterationPage Regs;
+		
+	TestData tstdata  = new TestData("C:\\Users\\Candle_Store\\Desktop\\VOIS_Testng\\VoisTest\\TestData\\nopCommerce.xlsx","Registeration");
+	
+	@Test(dependsOnMethods = {"Registeration","clickregister"})
+	    public void UserChooseGender(String gender ) throws IOException {
+		gender = tstdata.GetStringData("C:\\Users\\Candle_Store\\Desktop\\VOIS_Testng\\VoisTest\\TestData\\nopCommerce.xlsx","Registeration");
+	    System.out.println(gender);  
+		Regs = new RegisterationPage();
+	        Regs.chooseGender(gender);
+	    }
+	@Test
+	    public void fillFirstnam_lastName(String fname, String lname) {
+	        Regs = new RegisterationPage();
+	        Regs.Filling_Fname_Lname(fname, lname);
+	    }
+	
+	@Test
+	    public void selectBirthdaysBirthmonthBirthyear(String day, String month, String year) {
+	        Regs = new RegisterationPage();
+	        Regs.SelectingBirthday(day, month, year);
+	    }
+	
+	@Test
+	    public void fillemailaddress(String email) {
+	        Regs = new RegisterationPage();
+	        Regs.SettingEmailAddress(email);
+	    }
+	
+	@Test
+	    public void fillthecompanyname(String cname) {
+	        Regs = new RegisterationPage();
+	        Regs.SettingCompanyName(cname);
+	    }
+	
+	@Test
+	    public void fillPasswordandConfirm_password(String password, String cpassword) {
+	        Regs = new RegisterationPage();
+	        Regs.Setting_Pssword(password, cpassword);
+	    }
+	
+	@Test
+	    public void clickontheregisterbutton() {
+	        Regs = new RegisterationPage();
+	        Regs.Submitting_Registeration();
+	    }
+	
+}

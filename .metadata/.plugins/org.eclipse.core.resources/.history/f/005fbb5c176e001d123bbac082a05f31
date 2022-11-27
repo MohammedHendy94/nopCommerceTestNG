@@ -1,0 +1,21 @@
+package tests;
+
+import org.testng.annotations.Test;
+import Bases.Base;
+import pages.HomePage;
+
+public class HomeTests extends Base {
+	HomePage hompag;
+	@Test
+	public void openTheSite() {
+		launch_browser();
+	}
+	@Test()
+	public void user_click_register() {
+	     hompag = new HomePage();
+	    hompag.ClickondRegister();
+	    
+	    }
+	
+
+}

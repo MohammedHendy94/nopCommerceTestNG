@@ -1,0 +1,32 @@
+package testdata;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+
+import org.apache.poi.sl.usermodel.Sheet;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class TestData {
+	
+	XSSFWorkbook workbok;
+	XSSFSheet sheet;
+	
+	public TestData(String excelpath, String sheetname) {
+		try {
+		 workbok = new XSSFWorkbook(excelpath);
+	     sheet =  workbok.getSheet(sheetname);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+	
+	public String GetGender() {
+         return  sheet.getRow(1).getCell(0).getStringCellValue();	
+	}
+	
+
+}

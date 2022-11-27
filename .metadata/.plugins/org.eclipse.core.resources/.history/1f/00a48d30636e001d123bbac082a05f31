@@ -1,0 +1,22 @@
+package tests;
+
+import org.testng.annotations.Test;
+
+import pages.SearchResultPage;
+
+public class SearchResultsTests extends HomeRegisteredTests{
+	
+	   SearchResultPage search;
+	   
+	   @Test(dependsOnMethods = {"searchingforproduct"}, priority = 1)
+	    public void AddProductToCart() {
+	        search = new SearchResultPage();
+	       search.AddingProduct();
+	    }
+	   @Test(dependsOnMethods = {"AddProductToCart"}, priority = 2)
+	    public void OpenCart() {
+	        search = new SearchResultPage();
+	       search.GoToshoppingCart();
+	    }
+
+}

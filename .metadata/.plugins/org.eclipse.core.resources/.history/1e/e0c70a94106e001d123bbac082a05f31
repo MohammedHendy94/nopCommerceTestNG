@@ -1,0 +1,13 @@
+package tests;
+
+import org.testng.annotations.Test;
+import Bases.Base;
+public class HomeTests extends Base {
+	
+	@Test
+	public void openTheSite() {
+		launch_browser();
+	}
+	
+
+}

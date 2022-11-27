@@ -1,0 +1,64 @@
+package tests;
+
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import pages.HomePage;
+import pages.RegisterationPage;
+import testdata.TestData;
+
+public class RegisterationTests extends HomeTests {
+	
+	RegisterationPage Regs;
+	
+	
+	//String projpath = System.getProperty("user.dir");
+	//TestData tstdata = new TestData(projpath+"/TestData/nopCommerce.xlsx", "Registeration");
+	
+
+
+	
+	@Test(dependsOnMethods = {"Registeration","clickregister"})
+	    public void UserChooseGender(String gender ) {
+	//	tsdata = new TestData(projpath+"/TestData/nopCommerce.xlsx", "Registeration");
+		//gender = tstdata.GetStringData();
+	        Regs = new RegisterationPage();
+	        Regs.chooseGender(gender);
+	    }
+	@Test
+	    public void fillFirstnam_lastName(String fname, String lname) {
+	        Regs = new RegisterationPage();
+	        Regs.Filling_Fname_Lname(fname, lname);
+	    }
+	
+	@Test
+	    public void selectBirthdaysBirthmonthBirthyear(String day, String month, String year) {
+	        Regs = new RegisterationPage();
+	        Regs.SelectingBirthday(day, month, year);
+	    }
+	
+	@Test
+	    public void fillemailaddress(String email) {
+	        Regs = new RegisterationPage();
+	        Regs.SettingEmailAddress(email);
+	    }
+	
+	@Test
+	    public void fillthecompanyname(String cname) {
+	        Regs = new RegisterationPage();
+	        Regs.SettingCompanyName(cname);
+	    }
+	
+	@Test
+	    public void fillPasswordandConfirm_password(String password, String cpassword) {
+	        Regs = new RegisterationPage();
+	        Regs.Setting_Pssword(password, cpassword);
+	    }
+	
+	@Test
+	    public void clickontheregisterbutton() {
+	        Regs = new RegisterationPage();
+	        Regs.Submitting_Registeration();
+	    }
+	
+}

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="tests.CheckOutTests">
+        <methods>
+          <include name="clickConfirmToOnTheOrderDetails"/>
+          <include name="selectTheShippingMethod"/>
+          <include name="fill_the_billingAddress"/>
+          <include name="selectThePaymentMethodAndContinue"/>
+        </methods>
+      </class> <!-- tests.CheckOutTests -->
+      <class name="tests.ShoppingCartTests">
+        <methods>
+          <include name="AgreeToTermsOfService"/>
+          <include name="ClickCheckOut"/>
+        </methods>
+      </class> <!-- tests.ShoppingCartTests -->
+      <class name="tests.SearchResultsTests">
+        <methods>
+          <include name="AddProductToCart"/>
+          <include name="OpenCart"/>
+        </methods>
+      </class> <!-- tests.SearchResultsTests -->
+      <class name="tests.HomeTests">
+        <methods>
+          <include name="Registeration"/>
+          <include name="clickregister"/>
+        </methods>
+      </class> <!-- tests.HomeTests -->
+      <class name="tests.RegisterationTests">
+        <methods>
+          <include name="fillFirstnam_lastName"/>
+          <include name="selectBirthdaysBirthmonthBirthyear"/>
+          <include name="fillPasswordandConfirm_password"/>
+          <include name="UserChooseGender"/>
+          <include name="fillemailaddress"/>
+          <include name="clickontheregisterbutton"/>
+          <include name="fillthecompanyname"/>
+        </methods>
+      </class> <!-- tests.RegisterationTests -->
+      <class name="tests.HomeRegisteredTests">
+        <methods>
+          <include name="searchingforproduct"/>
+        </methods>
+      </class> <!-- tests.HomeRegisteredTests -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

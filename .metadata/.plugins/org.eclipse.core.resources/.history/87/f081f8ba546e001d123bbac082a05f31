@@ -1,0 +1,66 @@
+package tests;
+
+import java.io.IOException;
+
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+import pages.RegisterationPage;
+import testdata.TestData;
+
+public class RegisterationTests extends HomeTests {
+	
+	RegisterationPage Regs;
+		
+	TestData tstdata  = new TestData("C:\\Users\\Candle_Store\\Desktop\\VOIS_Testng\\VoisTest\\TestData\\nopCommerce.xlsx","Registeration");
+	
+	/*
+	@Test
+	public void check() {
+		System.out.println(tstdata.getGender());
+	}
+	*/
+	@Test(dependsOnMethods = {"Registeration","clickregister"})
+	    public void UserChooseGender(){
+		
+		    Regs = new RegisterationPage();
+	        Regs.chooseGender(tstdata.getGender());
+	    }
+	
+	
+	@Test
+	    public void fillFirstnam_lastName() {
+	        Regs = new RegisterationPage();
+	        Regs.Filling_Fname_Lname(tstdata.getfirstname(), tstdata.getlastname());
+	    }
+	
+	@Test
+	    public void selectBirthdaysBirthmonthBirthyear() {
+	        Regs = new RegisterationPage();	        
+	        Regs.SelectingBirthday(tstdata.getbirthday(), tstdata.getbirmonth(), tstdata.getbirthyear());
+	    }
+	
+	@Test
+	    public void fillemailaddress() {
+	        Regs = new RegisterationPage();
+	        Regs.SettingEmailAddress(tstdata.getemail());
+	    }
+	
+	@Test
+	    public void fillthecompanyname() {
+	        Regs = new RegisterationPage();
+	        Regs.SettingCompanyName(tstdata.getcompanyname());
+	    }
+	
+	@Test
+	    public void fillPasswordandConfirm_password() {
+	        Regs = new RegisterationPage();
+	        Regs.Setting_Pssword(tstdata.getpassword(), tstdata.getconfirmpassword());
+	    }
+	
+	@Test
+	    public void clickontheregisterbutton() {
+	        Regs = new RegisterationPage();
+	        Regs.Submitting_Registeration();
+	    }
+	
+}

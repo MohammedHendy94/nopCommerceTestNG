@@ -1,0 +1,15 @@
+package tests;
+
+import pages.ShoppingCartPage;
+
+public class ShoppingCartTests {
+	
+	ShoppingCartPage shopcart;
+    public void agree_to_the_terms_of_service_and_click_checkout() {
+      shopcart =new ShoppingCartPage();
+      shopcart.Agreetoterms();
+      shopcart.ClickCheckout();
+
+    }
+
+}

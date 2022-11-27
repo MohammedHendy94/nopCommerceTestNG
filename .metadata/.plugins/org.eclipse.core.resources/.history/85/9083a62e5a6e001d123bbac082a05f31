@@ -1,0 +1,12 @@
+package tests;
+
+import pages.HomeRegisteredPage;
+
+public class HomeRegisteredTests extends RegisterationTests {
+	
+	HomeRegisteredPage homreg;
+	
+	@Test
+	
+
+}

@@ -1,0 +1,24 @@
+package tests;
+
+import org.testng.annotations.Test;
+
+import pages.ShoppingCartPage;
+
+public class ShoppingCartTests extends SearchResultsTests {
+	
+	ShoppingCartPage shopcart;
+	
+@Test(dependsOnMethods = {"AddProductToCart"}, priority = 1) 
+    public void AgreeToTermsOfService (){
+      shopcart =new ShoppingCartPage();
+      shopcart.Agreetoterms();
+    }
+
+
+@Test(dependsOnMethods = {"AgreeToTermsOfService"}, priority = 2) 
+    public void ClickCheckOut (){
+        shopcart =new ShoppingCartPage();
+        shopcart.ClickCheckout();
+      }
+
+}

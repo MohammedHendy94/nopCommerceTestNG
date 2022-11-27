@@ -1,0 +1,18 @@
+package tests;
+
+import pages.SearchResultPage;
+
+public class SearchResultsTests {
+	
+	   SearchResultPage search;
+	    public void AddProductToCart() {
+	        search = new SearchResultPage();
+	       search.AddingProduct();
+	       search.GoToshoppingCart();
+	    }
+	    public void OpenCart() {
+	        search = new SearchResultPage();
+	       search.GoToshoppingCart();
+	    }
+
+}

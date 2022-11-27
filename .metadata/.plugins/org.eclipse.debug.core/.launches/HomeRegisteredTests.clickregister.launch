@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.testng.eclipse.launchconfig">
+    <stringAttribute key="org.eclipse.jdt.launching.CLASSPATH_PROVIDER" value="org.eclipse.m2e.launchconfig.classpathProvider"/>
+    <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="org.testng.remote.RemoteTestNG"/>
+    <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="VoisTest"/>
+    <stringAttribute key="org.eclipse.jdt.launching.SOURCE_PATH_PROVIDER" value="org.eclipse.m2e.launchconfig.sourcepathProvider"/>
+    <mapAttribute key="org.testng.eclipse.ALL_CLASS_METHODS">
+        <mapEntry key="tests.CheckOutTests" value="clickConfirmToOnTheOrderDetails;selectThePaymentMethodAndContinue;selectTheShippingMethod;fill_the_billingAddress"/>
+        <mapEntry key="tests.HomeRegisteredTests" value="searchingforproduct"/>
+        <mapEntry key="tests.HomeTests" value="clickregister;Registeration"/>
+        <mapEntry key="tests.RegisterationTests" value="selectBirthdaysBirthmonthBirthyear;fillPasswordandConfirm_password;fillemailaddress;UserChooseGender;fillFirstnam_lastName;fillthecompanyname;clickontheregisterbutton"/>
+        <mapEntry key="tests.SearchResultsTests" value="AddProductToCart;OpenCart"/>
+        <mapEntry key="tests.ShoppingCartTests" value="AgreeToTermsOfService;ClickCheckOut"/>
+    </mapAttribute>
+    <listAttribute key="org.testng.eclipse.CLASS_TEST_LIST">
+        <listEntry value="tests.HomeRegisteredTests"/>
+        <listEntry value="tests.CheckOutTests"/>
+        <listEntry value="tests.ShoppingCartTests"/>
+        <listEntry value="tests.SearchResultsTests"/>
+        <listEntry value="tests.RegisterationTests"/>
+        <listEntry value="tests.HomeTests"/>
+    </listAttribute>
+    <listAttribute key="org.testng.eclipse.METHOD_TEST_LIST">
+        <listEntry value="clickregister"/>
+        <listEntry value="AgreeToTermsOfService"/>
+        <listEntry value="AddProductToCart"/>
+        <listEntry value="selectBirthdaysBirthmonthBirthyear"/>
+        <listEntry value="clickConfirmToOnTheOrderDetails"/>
+        <listEntry value="fillPasswordandConfirm_password"/>
+        <listEntry value="selectThePaymentMethodAndContinue"/>
+        <listEntry value="fillemailaddress"/>
+        <listEntry value="selectTheShippingMethod"/>
+        <listEntry value="ClickCheckOut"/>
+        <listEntry value="UserChooseGender"/>
+        <listEntry value="searchingforproduct"/>
+        <listEntry value="Registeration"/>
+        <listEntry value="fill_the_billingAddress"/>
+        <listEntry value="fillFirstnam_lastName"/>
+        <listEntry value="OpenCart"/>
+        <listEntry value="fillthecompanyname"/>
+        <listEntry value="clickontheregisterbutton"/>
+    </listAttribute>
+    <listAttribute key="org.testng.eclipse.PACKAGE_TEST_LIST"/>
+    <stringAttribute key="org.testng.eclipse.PRE_DEFINED_LISTENERS" value=""/>
+    <intAttribute key="org.testng.eclipse.TYPE" value="4"/>
+</launchConfiguration>

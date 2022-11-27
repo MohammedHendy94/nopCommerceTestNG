@@ -1,0 +1,44 @@
+package tests;
+
+import org.testng.annotations.Test;
+
+import pages.CheckOutPage;
+import testdata.TestData;
+
+public class CheckOutTests extends ShoppingCartTests{
+	
+	
+	
+	 CheckOutPage chekout;
+	 
+		TestData tstdata  = new TestData("C:\\Users\\Candle_Store\\Desktop\\VOIS_Testng\\VoisTest\\TestData\\nopCommerce.xlsx","BillingAddress");
+
+		@Test(dependsOnMethods = {"ClickCheckOut"}, priority = 1) 
+	    public void fill_the_billingAddress() {
+	        chekout = new CheckOutPage();
+	        String countrycod = String.valueOf(tstdata.getcountry());
+	        String zipcod = String.valueOf(tstdata.getzipcode());
+	        String phone = String.valueOf(tstdata.getphonnumber());
+	        chekout.FillingBillingAddress(countrycod,tstdata.getcity(), tstdata.getaddress1(), zipcod, phone);
+	    }
+		
+		@Test(dependsOnMethods = {"fill_the_billingAddress"}, priority = 2) 
+	    public void selectTheShippingMethod() {
+	        CheckOutPage.SelectingShippingMethod(tstdata.getshipmentmethod());
+	    }
+		
+		@Test(dependsOnMethods = {"selectTheShippingMethod"}, priority = 3) 
+
+	    public void selectThePaymentMethodAndContinue() {
+	        CheckOutPage.SelectingpaymentMethod();
+	    }
+		
+		
+		@Test(dependsOnMethods = {"selectThePaymentMethodAndContinue"}, priority = 4) 
+	    public void clickConfirmToOnTheOrderDetails() {
+	        CheckOutPage.ConfirmingOrder();
+	        
+	    }
+
+	 
+}

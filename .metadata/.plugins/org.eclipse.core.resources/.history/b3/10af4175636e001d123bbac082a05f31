@@ -1,0 +1,17 @@
+package tests;
+
+import pages.ShoppingCartPage;
+
+public class ShoppingCartTests {
+	
+	ShoppingCartPage shopcart;
+    public void AgreeToTermsOfService (){
+      shopcart =new ShoppingCartPage();
+      shopcart.Agreetoterms();
+    }
+    public void ClickCheckOut (){
+        shopcart =new ShoppingCartPage();
+        shopcart.ClickCheckout();
+      }
+
+}
