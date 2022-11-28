@@ -1,0 +1,30 @@
+package pages;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
+import Bases.Base;
+
+public class SearchResultPage extends Base {
+	
+	 //Defining Web elements of the page
+    WebElement AddToCartBtn = driver.findElement(By.xpath("//button[@class='button-2 product-box-add-to-cart-button']"));
+ public   WebElement ShopCartBtn = driver.findElement(By.xpath("//span[@class='cart-label']"));
+   public WebElement ShopCartLble = driver.findElement(By.xpath("//span[@class='cart-qty']"));
+   public WebElement NotifBar = driver.findElement(By.id("bar-notification"));
+
+
+    //Defining methods for handling actions on web elements
+
+    public void AddingProduct(){
+        AddToCartBtn.click();
+      //  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+
+    }
+    public void GoToshoppingCart(){
+        ShopCartBtn.click();
+    }
+
+}

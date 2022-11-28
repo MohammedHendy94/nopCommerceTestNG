@@ -2,52 +2,52 @@
 <testng-results ignored="47" total="65" passed="17" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-27T17:41:18 EET" name="Default suite" finished-at="2022-11-27T17:41:36 EET" duration-ms="17889">
+  <suite started-at="2022-11-28T15:37:10 EET" name="Default suite" finished-at="2022-11-28T15:37:36 EET" duration-ms="26104">
     <groups>
     </groups>
-    <test started-at="2022-11-27T17:41:18 EET" name="Default test" finished-at="2022-11-27T17:41:36 EET" duration-ms="17889">
+    <test started-at="2022-11-28T15:37:10 EET" name="Default test" finished-at="2022-11-28T15:37:36 EET" duration-ms="26104">
       <class name="tests.ShoppingCartTests">
-        <test-method signature="AgreeToTermsOfService()[pri:1, instance:tests.ShoppingCartTests@2d195ee4]" started-at="2022-11-27T17:41:32 EET" name="AgreeToTermsOfService" finished-at="2022-11-27T17:41:32 EET" depends-on-methods="tests.SearchResultsTests.OpenCart" duration-ms="136" status="PASS">
+        <test-method signature="AgreeToTermsOfService()[pri:1, instance:tests.ShoppingCartTests@2d195ee4]" started-at="2022-11-28T15:37:31 EET" name="AgreeToTermsOfService" finished-at="2022-11-28T15:37:31 EET" depends-on-methods="tests.SearchResultsTests.OpenCart" duration-ms="196" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AgreeToTermsOfService -->
-        <test-method signature="ClickCheckOut()[pri:2, instance:tests.ShoppingCartTests@2d195ee4]" started-at="2022-11-27T17:41:32 EET" name="ClickCheckOut" finished-at="2022-11-27T17:41:34 EET" depends-on-methods="tests.ShoppingCartTests.AgreeToTermsOfService" duration-ms="1285" status="PASS">
+        <test-method signature="ClickCheckOut()[pri:2, instance:tests.ShoppingCartTests@2d195ee4]" started-at="2022-11-28T15:37:31 EET" name="ClickCheckOut" finished-at="2022-11-28T15:37:33 EET" depends-on-methods="tests.ShoppingCartTests.AgreeToTermsOfService" duration-ms="1500" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ClickCheckOut -->
       </class> <!-- tests.ShoppingCartTests -->
       <class name="tests.HomeTests">
-        <test-method signature="Registeration()[pri:0, instance:tests.HomeTests@551de37d]" started-at="2022-11-27T17:41:18 EET" name="Registeration" finished-at="2022-11-27T17:41:25 EET" duration-ms="6524" status="PASS">
+        <test-method signature="Registeration()[pri:0, instance:tests.HomeTests@551de37d]" started-at="2022-11-28T15:37:10 EET" name="Registeration" finished-at="2022-11-28T15:37:17 EET" duration-ms="7392" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Registeration -->
-        <test-method signature="clickregister()[pri:0, instance:tests.HomeTests@551de37d]" started-at="2022-11-27T17:41:25 EET" name="clickregister" finished-at="2022-11-27T17:41:26 EET" duration-ms="1237" status="PASS">
+        <test-method signature="clickregister()[pri:0, instance:tests.HomeTests@551de37d]" started-at="2022-11-28T15:37:17 EET" name="clickregister" finished-at="2022-11-28T15:37:19 EET" duration-ms="1398" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickregister -->
       </class> <!-- tests.HomeTests -->
       <class name="tests.CheckOutTests">
-        <test-method signature="fill_the_billingAddress()[pri:1, instance:tests.CheckOutTests@65cc8228]" started-at="2022-11-27T17:41:34 EET" name="fill_the_billingAddress" finished-at="2022-11-27T17:41:35 EET" depends-on-methods="tests.ShoppingCartTests.ClickCheckOut" duration-ms="1001" status="PASS">
+        <test-method signature="fill_the_billingAddress()[pri:1, instance:tests.CheckOutTests@65cc8228]" started-at="2022-11-28T15:37:33 EET" name="fill_the_billingAddress" finished-at="2022-11-28T15:37:34 EET" depends-on-methods="tests.ShoppingCartTests.ClickCheckOut" duration-ms="1435" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fill_the_billingAddress -->
-        <test-method signature="selectTheShippingMethod()[pri:2, instance:tests.CheckOutTests@65cc8228]" started-at="2022-11-27T17:41:35 EET" name="selectTheShippingMethod" finished-at="2022-11-27T17:41:35 EET" depends-on-methods="tests.CheckOutTests.fill_the_billingAddress" duration-ms="474" status="PASS">
+        <test-method signature="selectTheShippingMethod()[pri:2, instance:tests.CheckOutTests@65cc8228]" started-at="2022-11-28T15:37:34 EET" name="selectTheShippingMethod" finished-at="2022-11-28T15:37:35 EET" depends-on-methods="tests.CheckOutTests.fill_the_billingAddress" duration-ms="553" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectTheShippingMethod -->
-        <test-method signature="selectThePaymentMethodAndContinue()[pri:3, instance:tests.CheckOutTests@65cc8228]" started-at="2022-11-27T17:41:35 EET" name="selectThePaymentMethodAndContinue" finished-at="2022-11-27T17:41:36 EET" depends-on-methods="tests.CheckOutTests.selectTheShippingMethod" duration-ms="714" status="PASS">
+        <test-method signature="selectThePaymentMethodAndContinue()[pri:3, instance:tests.CheckOutTests@65cc8228]" started-at="2022-11-28T15:37:35 EET" name="selectThePaymentMethodAndContinue" finished-at="2022-11-28T15:37:35 EET" depends-on-methods="tests.CheckOutTests.selectTheShippingMethod" duration-ms="759" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectThePaymentMethodAndContinue -->
-        <test-method signature="clickConfirmToOnTheOrderDetails()[pri:4, instance:tests.CheckOutTests@65cc8228]" started-at="2022-11-27T17:41:36 EET" name="clickConfirmToOnTheOrderDetails" finished-at="2022-11-27T17:41:36 EET" depends-on-methods="tests.CheckOutTests.selectThePaymentMethodAndContinue" duration-ms="332" status="FAIL">
+        <test-method signature="clickConfirmToOnTheOrderDetails()[pri:4, instance:tests.CheckOutTests@65cc8228]" started-at="2022-11-28T15:37:35 EET" name="clickConfirmToOnTheOrderDetails" finished-at="2022-11-28T15:37:36 EET" depends-on-methods="tests.CheckOutTests.selectThePaymentMethodAndContinue" duration-ms="417" status="FAIL">
           <exception class="java.lang.IllegalArgumentException">
             <message>
-              <![CDATA[Order was not booked successfully please check again]]>
+              <![CDATA[Order may not be booked successfully please check again]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: Order was not booked successfully please check again
+              <![CDATA[java.lang.IllegalArgumentException: Order may not be booked successfully please check again
 at dev.failsafe.internal.util.Assert.isTrue(Assert.java:29)
-at tests.CheckOutTests.clickConfirmToOnTheOrderDetails(CheckOutTests.java:42)
+at tests.CheckOutTests.clickConfirmToOnTheOrderDetails(CheckOutTests.java:49)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -84,47 +84,47 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- clickConfirmToOnTheOrderDetails -->
       </class> <!-- tests.CheckOutTests -->
       <class name="tests.RegisterationTests">
-        <test-method signature="UserChooseGender()[pri:1, instance:tests.RegisterationTests@7578e06a]" started-at="2022-11-27T17:41:26 EET" name="UserChooseGender" finished-at="2022-11-27T17:41:27 EET" depends-on-methods="tests.HomeTests.Registeration, tests.HomeTests.clickregister" duration-ms="377" status="PASS">
+        <test-method signature="UserChooseGender()[pri:1, instance:tests.RegisterationTests@23ee75c5]" started-at="2022-11-28T15:37:19 EET" name="UserChooseGender" finished-at="2022-11-28T15:37:19 EET" depends-on-methods="tests.HomeTests.Registeration, tests.HomeTests.clickregister" duration-ms="496" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserChooseGender -->
-        <test-method signature="fillFirstnam_lastName()[pri:2, instance:tests.RegisterationTests@7578e06a]" started-at="2022-11-27T17:41:27 EET" name="fillFirstnam_lastName" finished-at="2022-11-27T17:41:27 EET" depends-on-methods="tests.RegisterationTests.UserChooseGender" duration-ms="466" status="PASS">
+        <test-method signature="fillFirstnam_lastName()[pri:2, instance:tests.RegisterationTests@23ee75c5]" started-at="2022-11-28T15:37:19 EET" name="fillFirstnam_lastName" finished-at="2022-11-28T15:37:20 EET" depends-on-methods="tests.RegisterationTests.UserChooseGender" duration-ms="675" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fillFirstnam_lastName -->
-        <test-method signature="selectBirthdaysBirthmonthBirthyear()[pri:3, instance:tests.RegisterationTests@7578e06a]" started-at="2022-11-27T17:41:27 EET" name="selectBirthdaysBirthmonthBirthyear" finished-at="2022-11-27T17:41:28 EET" depends-on-methods="tests.RegisterationTests.fillFirstnam_lastName" duration-ms="645" status="PASS">
+        <test-method signature="selectBirthdaysBirthmonthBirthyear()[pri:3, instance:tests.RegisterationTests@23ee75c5]" started-at="2022-11-28T15:37:20 EET" name="selectBirthdaysBirthmonthBirthyear" finished-at="2022-11-28T15:37:21 EET" depends-on-methods="tests.RegisterationTests.fillFirstnam_lastName" duration-ms="992" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectBirthdaysBirthmonthBirthyear -->
-        <test-method signature="fillemailaddress()[pri:4, instance:tests.RegisterationTests@7578e06a]" started-at="2022-11-27T17:41:28 EET" name="fillemailaddress" finished-at="2022-11-27T17:41:28 EET" depends-on-methods="tests.RegisterationTests.selectBirthdaysBirthmonthBirthyear" duration-ms="358" status="PASS">
+        <test-method signature="fillemailaddress()[pri:4, instance:tests.RegisterationTests@23ee75c5]" started-at="2022-11-28T15:37:21 EET" name="fillemailaddress" finished-at="2022-11-28T15:37:21 EET" depends-on-methods="tests.RegisterationTests.selectBirthdaysBirthmonthBirthyear" duration-ms="499" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fillemailaddress -->
-        <test-method signature="fillthecompanyname()[pri:5, instance:tests.RegisterationTests@7578e06a]" started-at="2022-11-27T17:41:28 EET" name="fillthecompanyname" finished-at="2022-11-27T17:41:28 EET" depends-on-methods="tests.RegisterationTests.fillemailaddress" duration-ms="307" status="PASS">
+        <test-method signature="fillthecompanyname()[pri:5, instance:tests.RegisterationTests@23ee75c5]" started-at="2022-11-28T15:37:21 EET" name="fillthecompanyname" finished-at="2022-11-28T15:37:22 EET" depends-on-methods="tests.RegisterationTests.fillemailaddress" duration-ms="417" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fillthecompanyname -->
-        <test-method signature="fillPasswordandConfirm_password()[pri:6, instance:tests.RegisterationTests@7578e06a]" started-at="2022-11-27T17:41:28 EET" name="fillPasswordandConfirm_password" finished-at="2022-11-27T17:41:29 EET" depends-on-methods="tests.RegisterationTests.fillthecompanyname" duration-ms="465" status="PASS">
+        <test-method signature="fillPasswordandConfirm_password()[pri:6, instance:tests.RegisterationTests@23ee75c5]" started-at="2022-11-28T15:37:22 EET" name="fillPasswordandConfirm_password" finished-at="2022-11-28T15:37:22 EET" depends-on-methods="tests.RegisterationTests.fillthecompanyname" duration-ms="624" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fillPasswordandConfirm_password -->
-        <test-method signature="clickontheregisterbutton()[pri:7, instance:tests.RegisterationTests@7578e06a]" started-at="2022-11-27T17:41:29 EET" name="clickontheregisterbutton" finished-at="2022-11-27T17:41:31 EET" depends-on-methods="tests.RegisterationTests.fillPasswordandConfirm_password" duration-ms="1597" status="PASS">
+        <test-method signature="clickontheregisterbutton()[pri:7, instance:tests.RegisterationTests@23ee75c5]" started-at="2022-11-28T15:37:22 EET" name="clickontheregisterbutton" finished-at="2022-11-28T15:37:24 EET" depends-on-methods="tests.RegisterationTests.fillPasswordandConfirm_password" duration-ms="1683" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickontheregisterbutton -->
       </class> <!-- tests.RegisterationTests -->
       <class name="tests.HomeRegisteredTests">
-        <test-method signature="searchingforproduct()[pri:0, instance:tests.HomeRegisteredTests@4e8e8621]" started-at="2022-11-27T17:41:31 EET" name="searchingforproduct" finished-at="2022-11-27T17:41:31 EET" depends-on-methods="tests.RegisterationTests.clickontheregisterbutton" duration-ms="898" status="PASS">
+        <test-method signature="searchingforproduct()[pri:0, instance:tests.HomeRegisteredTests@4443ef6f]" started-at="2022-11-28T15:37:24 EET" name="searchingforproduct" finished-at="2022-11-28T15:37:25 EET" depends-on-methods="tests.RegisterationTests.clickontheregisterbutton" duration-ms="1005" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchingforproduct -->
       </class> <!-- tests.HomeRegisteredTests -->
       <class name="tests.SearchResultsTests">
-        <test-method signature="AddProductToCart()[pri:1, instance:tests.SearchResultsTests@2cfbeac4]" started-at="2022-11-27T17:41:31 EET" name="AddProductToCart" finished-at="2022-11-27T17:41:32 EET" depends-on-methods="tests.HomeRegisteredTests.searchingforproduct" duration-ms="143" status="PASS">
+        <test-method signature="AddProductToCart()[pri:1, instance:tests.SearchResultsTests@79a1728c]" started-at="2022-11-28T15:37:25 EET" name="AddProductToCart" finished-at="2022-11-28T15:37:26 EET" depends-on-methods="tests.HomeRegisteredTests.searchingforproduct" duration-ms="1026" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddProductToCart -->
-        <test-method signature="OpenCart()[pri:2, instance:tests.SearchResultsTests@2cfbeac4]" started-at="2022-11-27T17:41:32 EET" name="OpenCart" finished-at="2022-11-27T17:41:32 EET" depends-on-methods="tests.SearchResultsTests.AddProductToCart" duration-ms="736" status="PASS">
+        <test-method signature="OpenCart()[pri:2, instance:tests.SearchResultsTests@79a1728c]" started-at="2022-11-28T15:37:26 EET" name="OpenCart" finished-at="2022-11-28T15:37:31 EET" depends-on-methods="tests.SearchResultsTests.AddProductToCart" duration-ms="4837" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenCart -->

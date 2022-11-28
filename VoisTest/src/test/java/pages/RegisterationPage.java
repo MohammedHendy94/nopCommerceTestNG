@@ -10,18 +10,18 @@ import dev.failsafe.internal.util.Assert;
 public class RegisterationPage extends Base {
 	
 	  //Defining web elements
-    WebElement GenderMale_Rbtn = driver.findElement(By.id("gender-male"));
-    WebElement GenderFemale_Rbtn = driver.findElement(By.id("gender-female"));
-    WebElement FirstNameTxt = driver.findElement(By.id("FirstName"));
-    WebElement LastNameTxt = driver.findElement(By.id("LastName"));
-    WebElement DayofBirth = driver.findElement(By.xpath("//select[@name='DateOfBirthDay']"));
-    WebElement MonthofBirth = driver.findElement(By.xpath("//select[@name='DateOfBirthMonth']"));
-    WebElement YearofBirth = driver.findElement(By.xpath("//select[@name='DateOfBirthYear']"));
-    WebElement EmailTxt = driver.findElement(By.id("Email"));
-    WebElement CompanyNameTxt = driver.findElement(By.id("Company"));
-    WebElement PasswordTxt = driver.findElement(By.id("Password"));
-    WebElement CPAsswordTxt = driver.findElement(By.id("ConfirmPassword"));
-    WebElement RegisterBtn = driver.findElement(By.id("register-button"));
+  public  WebElement GenderMale_Rbtn = driver.findElement(By.id("gender-male"));
+  public  WebElement GenderFemale_Rbtn = driver.findElement(By.id("gender-female"));
+  public  WebElement FirstNameTxt = driver.findElement(By.id("FirstName"));
+  public  WebElement LastNameTxt = driver.findElement(By.id("LastName"));
+  public  WebElement DayofBirth = driver.findElement(By.xpath("//select[@name='DateOfBirthDay']"));
+  public  WebElement MonthofBirth = driver.findElement(By.xpath("//select[@name='DateOfBirthMonth']"));
+  public WebElement YearofBirth = driver.findElement(By.xpath("//select[@name='DateOfBirthYear']"));
+  public WebElement EmailTxt = driver.findElement(By.id("Email"));
+  public WebElement CompanyNameTxt = driver.findElement(By.id("Company"));
+  public WebElement PasswordTxt = driver.findElement(By.id("Password"));
+  public WebElement CPAsswordTxt = driver.findElement(By.id("ConfirmPassword"));
+  public WebElement RegisterBtn = driver.findElement(By.id("register-button"));
 
 
 
@@ -36,6 +36,7 @@ public class RegisterationPage extends Base {
                 GenderFemale_Rbtn.click();
         }
     }
+    
     public  void Filling_Fname_Lname(String firstname , String lastname){
         FirstNameTxt.sendKeys(firstname);
         LastNameTxt.sendKeys(lastname);
@@ -65,10 +66,7 @@ public class RegisterationPage extends Base {
         RegisterBtn.submit();
     }
 
-    public static void loggedingAssert(){
-        WebElement logoutBtn = driver.findElement(By.xpath("//a[@class='ico-logout']"));
-        Assert.isTrue(logoutBtn.isDisplayed(),"user couldn't register");
-    }
+
    
     
 

@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>17/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Nov 27 17:41:18 EET 2022</td>
+<td>Started on:</td><td>Mon Nov 28 15:37:10 EET 2022</td>
 </tr>
-<tr><td>Total time:</td><td>17 seconds (17889 ms)</td>
+<tr><td>Total time:</td><td>26 seconds (26104 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,9 +77,9 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='tests.CheckOutTests.clickConfirmToOnTheOrderDetails()'><b>clickConfirmToOnTheOrderDetails</b><br>Test class: tests.CheckOutTests</td>
-<td><div><pre>java.lang.IllegalArgumentException: Order was not booked successfully please check again
+<td><div><pre>java.lang.IllegalArgumentException: Order may not be booked successfully please check again
 	at dev.failsafe.internal.util.Assert.isTrue(Assert.java:29)
-	at tests.CheckOutTests.clickConfirmToOnTheOrderDetails(CheckOutTests.java:42)
+	at tests.CheckOutTests.clickConfirmToOnTheOrderDetails(CheckOutTests.java:49)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -108,10 +108,10 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace133579455", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace133579455'><pre>java.lang.IllegalArgumentException: Order was not booked successfully please check again
+</pre></div><a href='#' onClick='toggleBox("stack-trace182124057", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace182124057'><pre>java.lang.IllegalArgumentException: Order may not be booked successfully please check again
 	at dev.failsafe.internal.util.Assert.isTrue(Assert.java:29)
-	at tests.CheckOutTests.clickConfirmToOnTheOrderDetails(CheckOutTests.java:42)
+	at tests.CheckOutTests.clickConfirmToOnTheOrderDetails(CheckOutTests.java:49)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -153,11 +153,6 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.RegisterationTests.fillFirstnam_lastName()'><b>fillFirstnam_lastName</b><br>Test class: tests.RegisterationTests</td>
-<td></td>
-<td>0</td>
-<td>tests.RegisterationTests@7578e06a</td></tr>
-<tr>
 <td title='tests.ShoppingCartTests.AgreeToTermsOfService()'><b>AgreeToTermsOfService</b><br>Test class: tests.ShoppingCartTests</td>
 <td></td>
 <td>0</td>
@@ -168,25 +163,30 @@ function toggleAllBoxes() {
 <td>1</td>
 <td>tests.CheckOutTests@65cc8228</td></tr>
 <tr>
-<td title='tests.HomeRegisteredTests.searchingforproduct()'><b>searchingforproduct</b><br>Test class: tests.HomeRegisteredTests</td>
-<td></td>
-<td>0</td>
-<td>tests.HomeRegisteredTests@4e8e8621</td></tr>
-<tr>
-<td title='tests.SearchResultsTests.AddProductToCart()'><b>AddProductToCart</b><br>Test class: tests.SearchResultsTests</td>
-<td></td>
-<td>0</td>
-<td>tests.SearchResultsTests@2cfbeac4</td></tr>
-<tr>
-<td title='tests.RegisterationTests.clickontheregisterbutton()'><b>clickontheregisterbutton</b><br>Test class: tests.RegisterationTests</td>
+<td title='tests.ShoppingCartTests.ClickCheckOut()'><b>ClickCheckOut</b><br>Test class: tests.ShoppingCartTests</td>
 <td></td>
 <td>1</td>
-<td>tests.RegisterationTests@7578e06a</td></tr>
+<td>tests.ShoppingCartTests@2d195ee4</td></tr>
+<tr>
+<td title='tests.HomeRegisteredTests.searchingforproduct()'><b>searchingforproduct</b><br>Test class: tests.HomeRegisteredTests</td>
+<td></td>
+<td>1</td>
+<td>tests.HomeRegisteredTests@4443ef6f</td></tr>
+<tr>
+<td title='tests.RegisterationTests.selectBirthdaysBirthmonthBirthyear()'><b>selectBirthdaysBirthmonthBirthyear</b><br>Test class: tests.RegisterationTests</td>
+<td></td>
+<td>0</td>
+<td>tests.RegisterationTests@23ee75c5</td></tr>
 <tr>
 <td title='tests.RegisterationTests.fillthecompanyname()'><b>fillthecompanyname</b><br>Test class: tests.RegisterationTests</td>
 <td></td>
 <td>0</td>
-<td>tests.RegisterationTests@7578e06a</td></tr>
+<td>tests.RegisterationTests@23ee75c5</td></tr>
+<tr>
+<td title='tests.RegisterationTests.fillPasswordandConfirm_password()'><b>fillPasswordandConfirm_password</b><br>Test class: tests.RegisterationTests</td>
+<td></td>
+<td>0</td>
+<td>tests.RegisterationTests@23ee75c5</td></tr>
 <tr>
 <td title='tests.HomeTests.clickregister()'><b>clickregister</b><br>Test class: tests.HomeTests</td>
 <td></td>
@@ -198,45 +198,45 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>tests.CheckOutTests@65cc8228</td></tr>
 <tr>
-<td title='tests.HomeTests.Registeration()'><b>Registeration</b><br>Test class: tests.HomeTests</td>
-<td></td>
-<td>6</td>
-<td>tests.HomeTests@551de37d</td></tr>
-<tr>
-<td title='tests.RegisterationTests.fillemailaddress()'><b>fillemailaddress</b><br>Test class: tests.RegisterationTests</td>
-<td></td>
-<td>0</td>
-<td>tests.RegisterationTests@7578e06a</td></tr>
-<tr>
 <td title='tests.RegisterationTests.UserChooseGender()'><b>UserChooseGender</b><br>Test class: tests.RegisterationTests</td>
 <td></td>
 <td>0</td>
-<td>tests.RegisterationTests@7578e06a</td></tr>
+<td>tests.RegisterationTests@23ee75c5</td></tr>
 <tr>
-<td title='tests.RegisterationTests.selectBirthdaysBirthmonthBirthyear()'><b>selectBirthdaysBirthmonthBirthyear</b><br>Test class: tests.RegisterationTests</td>
+<td title='tests.RegisterationTests.clickontheregisterbutton()'><b>clickontheregisterbutton</b><br>Test class: tests.RegisterationTests</td>
 <td></td>
-<td>0</td>
-<td>tests.RegisterationTests@7578e06a</td></tr>
-<tr>
-<td title='tests.RegisterationTests.fillPasswordandConfirm_password()'><b>fillPasswordandConfirm_password</b><br>Test class: tests.RegisterationTests</td>
-<td></td>
-<td>0</td>
-<td>tests.RegisterationTests@7578e06a</td></tr>
-<tr>
-<td title='tests.SearchResultsTests.OpenCart()'><b>OpenCart</b><br>Test class: tests.SearchResultsTests</td>
-<td></td>
-<td>0</td>
-<td>tests.SearchResultsTests@2cfbeac4</td></tr>
+<td>1</td>
+<td>tests.RegisterationTests@23ee75c5</td></tr>
 <tr>
 <td title='tests.CheckOutTests.selectThePaymentMethodAndContinue()'><b>selectThePaymentMethodAndContinue</b><br>Test class: tests.CheckOutTests</td>
 <td></td>
 <td>0</td>
 <td>tests.CheckOutTests@65cc8228</td></tr>
 <tr>
-<td title='tests.ShoppingCartTests.ClickCheckOut()'><b>ClickCheckOut</b><br>Test class: tests.ShoppingCartTests</td>
+<td title='tests.SearchResultsTests.OpenCart()'><b>OpenCart</b><br>Test class: tests.SearchResultsTests</td>
+<td></td>
+<td>4</td>
+<td>tests.SearchResultsTests@79a1728c</td></tr>
+<tr>
+<td title='tests.SearchResultsTests.AddProductToCart()'><b>AddProductToCart</b><br>Test class: tests.SearchResultsTests</td>
 <td></td>
 <td>1</td>
-<td>tests.ShoppingCartTests@2d195ee4</td></tr>
+<td>tests.SearchResultsTests@79a1728c</td></tr>
+<tr>
+<td title='tests.HomeTests.Registeration()'><b>Registeration</b><br>Test class: tests.HomeTests</td>
+<td></td>
+<td>7</td>
+<td>tests.HomeTests@551de37d</td></tr>
+<tr>
+<td title='tests.RegisterationTests.fillemailaddress()'><b>fillemailaddress</b><br>Test class: tests.RegisterationTests</td>
+<td></td>
+<td>0</td>
+<td>tests.RegisterationTests@23ee75c5</td></tr>
+<tr>
+<td title='tests.RegisterationTests.fillFirstnam_lastName()'><b>fillFirstnam_lastName</b><br>Test class: tests.RegisterationTests</td>
+<td></td>
+<td>0</td>
+<td>tests.RegisterationTests@23ee75c5</td></tr>
 </table><p>
 </body>
 </html>

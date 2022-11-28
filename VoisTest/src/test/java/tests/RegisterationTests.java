@@ -1,4 +1,6 @@
 package tests;
+import static org.testng.Assert.assertEquals;
+
 import java.io.IOException;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -16,42 +18,65 @@ public class RegisterationTests extends HomeTests {
 
 	@Test(dependsOnMethods = {"Registeration","clickregister"}, priority = 1)
 	    public void UserChooseGender(){
-		
 		    Regs = new RegisterationPage();
 	        Regs.chooseGender(tstdata.getGender());
+	        
+	      //  System.out.println(Regs.GenderMale_Rbtn.isSelected());
+	        
+	        if (tstdata.getGender()== "Male") {
+	            Assert.isTrue(Regs.GenderFemale_Rbtn.isSelected(),"Male Gender is not selected");
 	    }
+	        else if(tstdata.getGender()== "Female") {
+	        	Assert.isTrue(Regs.GenderFemale_Rbtn.isSelected(),"Female Gender is not selected");
+	        }
+	}
 	
 	@Test ( dependsOnMethods = {"UserChooseGender"}, priority = 2)
 	    public void fillFirstnam_lastName() {
 	        Regs = new RegisterationPage();
 	        Regs.Filling_Fname_Lname(tstdata.getfirstname(), tstdata.getlastname());
+	        assertEquals(Regs.FirstNameTxt.getAttribute("value"), tstdata.getfirstname());
+	        assertEquals(Regs.LastNameTxt.getAttribute("value"), tstdata.getlastname());
+	        
+	        //System.out.println(Regs.LastNameTxt.getAttribute("value"));
+	       // System.out.println(Regs.FirstNameTxt.getAttribute("value"));
 	    }
 	
 	@Test ( dependsOnMethods = {"fillFirstnam_lastName"}, priority = 3)
 	    public void selectBirthdaysBirthmonthBirthyear() {
-	        Regs = new RegisterationPage();	        
+	        Regs = new RegisterationPage();	 
 			String Bday = String.valueOf(tstdata.getbirthday()); 
 	        String Bmonth = String.valueOf(tstdata.getbirmonth()); 
 	        String Byear = String.valueOf(tstdata.getbirthyear()); 
 	        Regs.SelectingBirthday(Bday, Bmonth, Byear);
+	        
+	       // System.out.println(Bday.getClass().getName());
+	        assertEquals(Regs.DayofBirth.getAttribute("value"), Bday);
+	       assertEquals(Regs.MonthofBirth.getAttribute("value"), Bmonth);
+	       assertEquals(Regs.YearofBirth.getAttribute("value"), Byear);
 	    }
 	
 	@Test (dependsOnMethods = {"selectBirthdaysBirthmonthBirthyear"}, priority = 4)
 	    public void fillemailaddress() {
 	        Regs = new RegisterationPage();
 	        Regs.SettingEmailAddress(tstdata.getemail());
+	        assertEquals(Regs.EmailTxt.getAttribute("value"), tstdata.getemail());
+
 	    }
 	
 	@Test (  dependsOnMethods = {"fillemailaddress"}, priority = 5)
 	    public void fillthecompanyname() {
 	        Regs = new RegisterationPage();
 	        Regs.SettingCompanyName(tstdata.getcompanyname());
+	        assertEquals(Regs.CompanyNameTxt.getAttribute("value"), tstdata.getcompanyname());
 	    }
 	
 	@Test ( dependsOnMethods = {"fillthecompanyname"},priority = 6)
 	    public void fillPasswordandConfirm_password() {
 	        Regs = new RegisterationPage();
 	        Regs.Setting_Pssword(tstdata.getpassword(), tstdata.getconfirmpassword());
+	        assertEquals(Regs.PasswordTxt.getAttribute("value"), tstdata.getpassword());
+	        assertEquals(Regs.CPAsswordTxt.getAttribute("value"), tstdata.getconfirmpassword());
 	    }
 	
 	@Test (dependsOnMethods = {"fillPasswordandConfirm_password"}, priority = 7)

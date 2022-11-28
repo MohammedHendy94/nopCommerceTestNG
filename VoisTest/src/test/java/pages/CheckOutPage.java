@@ -12,12 +12,12 @@ public class CheckOutPage extends Base {
 	
 	  //Defining Web elements of the page
 
-    WebElement CountryDdl = driver.findElement(By.id("BillingNewAddress_CountryId"));
-    WebElement CityTxt = driver.findElement(By.id("BillingNewAddress_City"));
-    WebElement Addrress1Txt = driver.findElement(By.id("BillingNewAddress_Address1"));
-    WebElement ZipcodeTxt = driver.findElement(By.id("BillingNewAddress_ZipPostalCode"));
-    WebElement phoneNumberTxt = driver.findElement(By.id("BillingNewAddress_PhoneNumber"));
-    WebElement Continue1Btn = driver.findElement(By.xpath("(//button[@name='save'])[1]"));
+  public   WebElement CountryDdl = driver.findElement(By.id("BillingNewAddress_CountryId"));
+  public   WebElement CityTxt = driver.findElement(By.id("BillingNewAddress_City"));
+  public   WebElement Addrress1Txt = driver.findElement(By.id("BillingNewAddress_Address1"));
+  public   WebElement ZipcodeTxt = driver.findElement(By.id("BillingNewAddress_ZipPostalCode"));
+  public   WebElement phoneNumberTxt = driver.findElement(By.id("BillingNewAddress_PhoneNumber"));
+  public   WebElement Continue1Btn = driver.findElement(By.xpath("(//button[@name='save'])[1]"));
  
 
     //Defining the methods that handles actions on web elements

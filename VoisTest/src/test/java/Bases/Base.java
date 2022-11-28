@@ -8,6 +8,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Base {
 	
+	
+	
 	public static WebDriver driver;
 	 public static void launch_browser(){
 	        WebDriverManager.chromedriver().setup();

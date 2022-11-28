@@ -1,9 +1,6 @@
 package testdata;
 
-import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
-import org.apache.poi.sl.usermodel.Sheet;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 

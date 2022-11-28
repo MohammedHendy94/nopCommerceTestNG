@@ -36,8 +36,8 @@
           <include name="fillPasswordandConfirm_password"/>
           <include name="UserChooseGender"/>
           <include name="fillemailaddress"/>
-          <include name="clickontheregisterbutton"/>
           <include name="fillthecompanyname"/>
+          <include name="clickontheregisterbutton"/>
         </methods>
       </class> <!-- tests.RegisterationTests -->
       <class name="tests.HomeRegisteredTests">

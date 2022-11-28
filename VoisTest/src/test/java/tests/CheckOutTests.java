@@ -1,5 +1,7 @@
 package tests;
 
+import static org.testng.Assert.assertEquals;
+
 import org.testng.annotations.Test;
 
 import dev.failsafe.internal.util.Assert;
@@ -21,7 +23,12 @@ public class CheckOutTests extends ShoppingCartTests{
 	        String zipcod = String.valueOf(tstdata.getzipcode());
 	        String phone = String.valueOf(tstdata.getphonnumber());
 	        chekout.FillingBillingAddress(countrycod,tstdata.getcity(), tstdata.getaddress1(), zipcod, phone);
-	    }
+	    
+	        assertEquals(chekout.CountryDdl.getAttribute("value"), countrycod);
+		    assertEquals(chekout.ZipcodeTxt.getAttribute("value"), zipcod);
+		    assertEquals(chekout.phoneNumberTxt.getAttribute("value"), phone);
+		
+		}
 		
 		@Test(dependsOnMethods = {"fill_the_billingAddress"}, priority = 2) 
 	    public void selectTheShippingMethod() {
@@ -39,7 +46,7 @@ public class CheckOutTests extends ShoppingCartTests{
 	    public void clickConfirmToOnTheOrderDetails() {
 	        CheckOutPage.ConfirmingOrder();
 	        String URL = driver.getCurrentUrl();
-		     Assert.isTrue(URL.contains("completed"), "Order was not booked successfully please check again");
+		     Assert.isTrue(URL.contains("completed"), "Order may not be booked successfully please check again");
 	    }
 
 	 

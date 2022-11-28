@@ -13,6 +13,7 @@ public class ShoppingCartTests extends SearchResultsTests {
     public void AgreeToTermsOfService (){
       shopcart =new ShoppingCartPage();
       shopcart.Agreetoterms();
+      Assert.isTrue(shopcart.AgreetoTermsChkbox.isSelected(),"Agree to terms not checked");
     }
 
 

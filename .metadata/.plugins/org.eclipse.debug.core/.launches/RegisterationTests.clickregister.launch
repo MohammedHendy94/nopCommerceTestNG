@@ -6,7 +6,7 @@
     <stringAttribute key="org.eclipse.jdt.launching.SOURCE_PATH_PROVIDER" value="org.eclipse.m2e.launchconfig.sourcepathProvider"/>
     <mapAttribute key="org.testng.eclipse.ALL_CLASS_METHODS">
         <mapEntry key="tests.HomeTests" value="clickregister;Registeration"/>
-        <mapEntry key="tests.RegisterationTests" value="UserChooseGender"/>
+        <mapEntry key="tests.RegisterationTests" value="fillemailaddress;UserChooseGender;selectBirthdaysBirthmonthBirthyear;fillPasswordandConfirm_password;fillFirstnam_lastName;fillthecompanyname;clickontheregisterbutton"/>
     </mapAttribute>
     <listAttribute key="org.testng.eclipse.CLASS_TEST_LIST">
         <listEntry value="tests.RegisterationTests"/>
@@ -14,8 +14,14 @@
     </listAttribute>
     <listAttribute key="org.testng.eclipse.METHOD_TEST_LIST">
         <listEntry value="clickregister"/>
+        <listEntry value="fillemailaddress"/>
         <listEntry value="UserChooseGender"/>
+        <listEntry value="selectBirthdaysBirthmonthBirthyear"/>
         <listEntry value="Registeration"/>
+        <listEntry value="fillPasswordandConfirm_password"/>
+        <listEntry value="fillFirstnam_lastName"/>
+        <listEntry value="fillthecompanyname"/>
+        <listEntry value="clickontheregisterbutton"/>
     </listAttribute>
     <listAttribute key="org.testng.eclipse.PACKAGE_TEST_LIST"/>
     <stringAttribute key="org.testng.eclipse.PRE_DEFINED_LISTENERS" value=""/>

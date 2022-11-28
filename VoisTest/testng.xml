@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="RegisteredOrderProduct">
+  <test thread-count="5" name="OrderScenario">
+    <classes>
+      <class name="tests.HomeRegisteredTests"/>
+      <class name="tests.HomeTests"/>
+      <class name="tests.RegisterationTests"/>
+      <class name="tests.ShoppingCartTests"/>
+      <class name="tests.SearchResultsTests"/>
+      <class name="tests.CheckOutTests"/>
+    </classes>
+  </test> <!-- OrderScenario -->
+</suite> <!-- RegisteredOrderProduct -->
